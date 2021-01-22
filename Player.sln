@@ -1,16 +1,27 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Player", "Player\Player.vcxproj", "{03E78B7A-4D1F-407D-9E26-83684019ED57}"
 	ProjectSection(ProjectDependencies) = postProject
+		{688A8214-E538-4DE3-8D13-856D0F6175E5} = {688A8214-E538-4DE3-8D13-856D0F6175E5}
 		{4B1B4176-BF97-4C70-89FE-93DAD8A13307} = {4B1B4176-BF97-4C70-89FE-93DAD8A13307}
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UFlib", "UFlib\UFlib.vcxproj", "{688A8214-E538-4DE3-8D13-856D0F6175E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MedioPlayer", "MedioPlayer\MedioPlayer.vcxproj", "{4B1B4176-BF97-4C70-89FE-93DAD8A13307}"
+	ProjectSection(ProjectDependencies) = postProject
+		{688A8214-E538-4DE3-8D13-856D0F6175E5} = {688A8214-E538-4DE3-8D13-856D0F6175E5}
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E} = {E106ACD7-4E53-4AEE-942B-D0DD426DB34E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,5 +75,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A4993FA-DF9D-48D4-9528-8F6EB5484885}
 	EndGlobalSection
 EndGlobal

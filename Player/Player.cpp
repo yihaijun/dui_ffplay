@@ -2,9 +2,16 @@
 #include "UFPlayer.h"
 #include "FFMPEGDef.h"
 
-#pragma comment(lib,"DuiLib_d.lib")
-#pragma comment(lib,"UFlib.lib")
-#pragma comment(lib,"MedioPlayer.lib")
+
+#ifdef _DEBUG
+	#pragma comment(lib,"..\\lib\\DuiLib_d.lib")
+	#pragma comment(lib,"..\\lib\\UFlib_d.lib")
+	#pragma comment(lib,"..\\lib\\MedioPlayer_d.lib")
+#else
+	#pragma comment(lib,"..\\lib\\DuiLib.lib")
+	#pragma comment(lib,"..\\lib\\UFlib.lib")
+	#pragma comment(lib,"..\\lib\\MedioPlayer.lib")
+#endif // _DEBUG
 
 #include <windows.h>
 #include <DbgHelp.h>

@@ -18,23 +18,17 @@
     <ClCompile Include="Player.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="FileDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="UFPlayer.cpp">
-      <Filter>头文件</Filter>
+      <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="UFVideo.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="FileDialog.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UFPlayer.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="UFVideo.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="FileDialog.h">
       <Filter>源文件</Filter>
     </ClInclude>
