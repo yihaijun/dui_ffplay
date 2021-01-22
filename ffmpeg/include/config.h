@@ -1616,7 +1616,7 @@
 #include <math.h>
 #define  isnan _isnan
 #define snprintf _snprintf
-
+/*
 __inline long rint(double x)
 {
 	if(x >= 0.)
@@ -1624,5 +1624,5 @@ __inline long rint(double x)
 	else
 		return (long)(x - 0.5);
 }
-
+*/
 #endif /* FFMPEG_CONFIG_H */

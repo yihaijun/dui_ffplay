@@ -1,0 +1,7 @@
+*.log
+v16
+*.user
+Debug
+Release
+/lib/MedioPlayer.lib
+/lib/UFlib.lib
