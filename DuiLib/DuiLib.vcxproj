@@ -347,6 +347,9 @@ xcopy ..\debug\Duilib_d.dll ..\bin /y</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Control\UIFProgress.cpp" />
+    <ClCompile Include="Control\UIIPAddress.cpp" />
+    <ClCompile Include="Control\UIIPAddressEx.cpp" />
+    <ClCompile Include="Core\ControlFactory.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='111|Win32'">Create</PrecompiledHeader>
@@ -418,6 +421,8 @@ xcopy ..\debug\Duilib_d.dll ..\bin /y</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Control\UIFProgress.h" />
+    <ClInclude Include="Control\UIIPAddress.h" />
+    <ClInclude Include="Control\UIIPAddressEx.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="UIlib.h" />
     <ClInclude Include="Utils\downloadmgr.h" />

@@ -2,6 +2,7 @@
 #define __UTILS_H__
 
 #pragma once
+#include <vector>
 
 namespace DuiLib
 {
@@ -30,6 +31,7 @@ namespace DuiLib
         CDuiPoint(LPCTSTR pstrValue);
         CDuiString ToString();
 	};
+
 
 	/////////////////////////////////////////////////////////////////////////////////////
 	//
@@ -142,6 +144,21 @@ namespace DuiLib
         LPTSTR m_pstr;
         TCHAR m_szBuffer[MAX_LOCAL_STRING_LEN + 1];
     };
+
+	static std::vector<CDuiString> StrSplit(CDuiString text, CDuiString sp)
+	{
+		std::vector<CDuiString> vResults;
+		int pos = text.Find(sp, 0);
+		while (pos >= 0)
+		{
+			CDuiString t = text.Left(pos);
+			vResults.push_back(t);
+			text = text.Right(text.GetLength() - pos - sp.GetLength());
+			pos = text.Find(sp);
+		}
+		vResults.push_back(text);
+		return vResults;
+	}
 
 	/////////////////////////////////////////////////////////////////////////////////////
 	//

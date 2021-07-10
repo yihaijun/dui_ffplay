@@ -153,6 +153,15 @@
     <ClCompile Include="Control\UIFProgress.cpp">
       <Filter>Source Files\Control</Filter>
     </ClCompile>
+    <ClCompile Include="Control\UIIPAddress.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\UIIPAddressEx.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ControlFactory.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StdAfx.h">
@@ -276,6 +285,12 @@
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
     <ClInclude Include="Control\UIFProgress.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIIPAddress.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\UIIPAddressEx.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
   </ItemGroup>

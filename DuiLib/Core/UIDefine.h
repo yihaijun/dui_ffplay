@@ -80,6 +80,8 @@ union DuiMessageMapFunctions
 
 #define DUI_MSGTYPE_SELECTCHANGED 		   (_T("selectchanged"))
 
+#define  DUI_CTR_IPADDRESS                       (_T("IPAddress"))
+
 
 //////////////////////////////////////////////////////////////////////////
 

@@ -78,6 +78,9 @@
 #include "Core/UIMarkup.h"
 #include "Core/UIDlgBuilder.h"
 #include "Core/UIRender.h"
+
+#include "Core/ControlFactory.h"
+
 #include "Utils/WinImplBase.h"
 #include "Utils/WndShadow.h"
 
@@ -91,6 +94,8 @@
 #include "Control/UICombo.h"
 #include "Control/UIScrollBar.h"
 #include "Control/UITreeView.h"
+#include "Control/UIIPAddress.h"
+#include "Control/UIIPAddressEx.h"
 
 #include "Control/UILabel.h"
 #include "Control/UIText.h"

@@ -47,6 +47,12 @@ void UFWindow::SetHeight(int nHeight)
 }
 void UFWindow::MoveWindow(int x,int y)
 {
+#ifdef _DEBUG
+	char buf[256];
+	memset(buf, 0, 256);
+	sprintf(buf, "\r\nUFWindow::MoveWindow(%d,%d)\r\n",x,y);
+	OutputDebugString(buf);
+#endif
 	::MoveWindow(GetHWND(),x,y,GetWidth(),GetHeight(),FALSE);
 }
 void UFWindow::Center()
